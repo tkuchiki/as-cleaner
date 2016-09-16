@@ -1,5 +1,5 @@
 # as-cleaner
-Delete Amazon EBS Snapshot for AMI
+Delete Amazon EBS Snapshot for deregistered AMI
 
 # Installation
 
