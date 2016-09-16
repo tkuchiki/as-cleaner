@@ -267,8 +267,11 @@ func main() {
 			}
 		}
 
+		trimedSnapshot := strings.TrimLeft(snapshotStr, " ")
 		if dryRun {
-			fmt.Println(fmt.Sprintf("dry run succeeded, %s %s", ami, strings.TrimLeft(snapshotStr, " ")))
+			fmt.Println(fmt.Sprintf("dry run succeeded, %s %s", ami, trimedSnapshot))
+		} else {
+			fmt.Println(fmt.Sprintf("deleted %s %s", ami, trimedSnapshot))
 		}
 	}
 
